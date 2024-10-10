@@ -1,0 +1,937 @@
+﻿/*Telerik RadGrid MCS Skin*/
+
+/*global*/
+
+.RadGrid_Mcs
+{
+    /*border:1px solid #828282;*/
+    background:transparent;
+    /*background:#fff;*/
+    color:#333;
+    
+}
+
+ 
+.RadGrid_Mcs,
+.RadGrid_Mcs .rgMasterTable,
+.RadGrid_Mcs .rgDetailTable,
+.RadGrid_Mcs .rgGroupPanel table,
+.RadGrid_Mcs .rgCommandRow table,
+.RadGrid_Mcs .rgEditForm table,
+.RadGrid_Mcs .rgPager table,
+.GridToolTip_Mcs
+{
+    font:12px/16px "segoe ui",arial,sans-serif;
+    
+}
+
+.RadGrid_Mcs .rgMasterTable,
+.RadGrid_Mcs .rgDetailTable
+{
+    border-collapse:separate;
+}
+
+.RadGrid_Mcs .rgRow,
+.RadGrid_Mcs .rgAltRow,
+.RadGrid_Mcs .rgHeader,
+.RadGrid_Mcs .rgResizeCol,
+.RadGrid_Mcs .rgPager,
+.RadGrid_Mcs .rgGroupPanel,
+.RadGrid_Mcs .rgGroupHeader
+{
+	cursor:default;		
+	
+}
+
+.RadGrid_Mcs input[type="image"]
+{
+	cursor:pointer;
+}
+
+.RadGrid_Mcs .rgRow td,
+.RadGrid_Mcs .rgAltRow td,
+.RadGrid_Mcs .rgEditRow td,
+.RadGrid_Mcs .rgFooter td,
+.RadGrid_Mcs .rgFilterRow td,
+.RadGrid_Mcs .rgHeader,
+.RadGrid_Mcs .rgResizeCol,
+.RadGrid_Mcs .rgGroupHeader td
+{
+	padding-left:7px;
+	padding-right:7px;
+
+
+}
+
+
+.RadGrid_Mcs .rgClipCells .rgHeader,
+.RadGrid_Mcs .rgClipCells .rgRow>td,
+.RadGrid_Mcs .rgClipCells .rgAltRow>td
+{
+	overflow:hidden;
+}
+
+.RadGrid_Mcs .rgAdd,
+.RadGrid_Mcs .rgRefresh,
+.RadGrid_Mcs .rgEdit,
+.RadGrid_Mcs .rgDel,
+.RadGrid_Mcs .rgFilter,
+.RadGrid_Mcs .rgPagePrev,
+.RadGrid_Mcs .rgPageNext,
+.RadGrid_Mcs .rgPageFirst,
+.RadGrid_Mcs .rgPageLast,
+.RadGrid_Mcs .rgExpand,
+.RadGrid_Mcs .rgCollapse,
+.RadGrid_Mcs .rgSortAsc,
+.RadGrid_Mcs .rgSortDesc,
+.RadGrid_Mcs .rgUpdate,
+.RadGrid_Mcs .rgCancel,
+.RadGrid_Mcs .rgUngroup
+{
+	width:16px;
+	height:16px;
+	border:0;
+	margin:0;
+	padding:0;
+	background-color:transparent;
+	background-image:url('sprite.gif');
+	background-repeat:no-repeat;
+	vertical-align:middle;
+	font-size:1px;
+	cursor:pointer;
+}
+
+.RadGrid_Mcs .rgGroupItem input,
+.RadGrid_Mcs .rgCommandRow img,
+.RadGrid_Mcs .rgHeader input,
+.RadGrid_Mcs .rgFilterRow img,
+.RadGrid_Mcs .rgFilterRow input,
+.RadGrid_Mcs .rgPager img
+{
+	vertical-align:middle;
+}
+
+/*header*/
+
+.RadGrid_Mcs .rgHeaderDiv
+{
+	background:#eee 0 -7550px repeat-x url('sprite.gif');
+
+}
+.rgTwoLines .rgHeaderDiv
+{
+	background-position:0 -7050px;
+}
+
+.rgNoScrollImage .rgHeaderDiv
+{
+	background-image:none;
+}
+
+
+/*EDIT/DELETE control titles*/
+.RadGrid_Mcs .rgHeader,
+.RadGrid_Mcs th.rgResizeCol
+{
+	border:0;
+	border-bottom:1px solid #828282;	
+	border-right:0px;	
+	padding-top:5px;
+	padding-bottom:4px;
+	background:#6990af  0 -2400px repeat-x url('sprite.gif');
+	text-align:left;
+	
+}
+
+.RadGrid_Mcs th.rgSorted
+{
+	background:#c5c5c5 0 -4000px repeat-x url('sprite.gif');
+	background-color:#c4c4c4;
+}
+
+
+/*HEADER Tiles INFORMATION*/
+.RadGrid_Mcs .rgHeader,
+.RadGrid_Mcs .rgHeader a
+{
+    color:#DFE6EC !important; 
+    font-family:Arial;
+    vertical-align:middle;
+    text-decoration:none;
+    border-right:groove 1px #88AAC5;
+}
+
+
+
+.RadGrid_Mcs .rgCheck
+{
+	height:15px;
+	margin:0;
+	padding:0;
+}
+
+/*rows*/
+
+.RadGrid_Mcs .rgRow td,
+.RadGrid_Mcs .rgAltRow td,
+.RadGrid_Mcs .rgEditRow td,
+.RadGrid_Mcs .rgFooter td
+{
+	border:0;
+	border-bottom:1px solid;
+
+
+	border-right:1px solid Aqua;
+	
+	padding-top:4px;
+	padding-bottom:3px;
+
+}
+
+.RadGrid_Mcs .rgRow td
+{
+	/*border-color:#fff;*/
+}
+
+.RadGrid_Mcs .rgAltRow
+{
+	/*background:#f2f2f2;*/
+	background:#dfe6ec 0 -2460px repeat-x url('sprite.gif');
+}
+
+.RadGrid_Mcs .rgAltRow td
+{
+	background:#dfe6ec;
+	/*border-color:#f2f2f2;*/
+}
+
+.RadGrid_Mcs .rgRow .rgSorted
+{
+	border-bottom-color:Aqua;
+	/*background-color:#f2f2f2;*/
+	
+}
+
+.RadGrid_Mcs .rgAltRow .rgSorted
+{
+	border-bottom-color:#e6e6e6;
+	background-color:#dfe6ec;
+}
+
+.RadGrid_Mcs .rgSelectedRow .rgSorted,
+.RadGrid_Mcs .rgActiveRow .rgSorted,
+.RadGrid_Mcs .rgHoveredRow .rgSorted,
+.RadGrid_Mcs .rgEditRow .rgSorted
+{
+	background-color:transparent;
+}
+
+.RadGrid_Mcs .rgRow a,
+.RadGrid_Mcs .rgAltRow a,
+.RadGrid_Mcs .rgEditRow a,
+.RadGrid_Mcs .rgFooter a,
+.RadGrid_Mcs .rgEditForm a
+{
+	color:#000;
+}
+
+.RadGrid_Mcs .rgSelectedRow
+{	
+    background:#828282 0 -3900px repeat-x url('sprite.gif');
+}
+*+html .RadGrid_Mcs .rgSelectedRow .rgSorted{background-color:#828282}
+* html .RadGrid_Mcs .rgSelectedRow .rgSorted{background-color:#828282}
+
+.RadGrid_Mcs .rgSelectedRow a
+{
+	color:#fff;
+}
+
+.RadGrid_Mcs .rgActiveRow,
+.RadGrid_Mcs .rgHoveredRow
+{
+    background:#c5c5c5 0 -2950px repeat-x url('sprite.gif');
+    color:#333;
+}
+*+html .RadGrid_Mcs .rgActiveRow .rgSorted,
+*+html .RadGrid_Mcs .rgHoveredRow .rgSorted{background-color:#c5c5c5}
+* html .RadGrid_Mcs .rgActiveRow .rgSorted,
+* html .RadGrid_Mcs .rgHoveredRow .rgSorted{background-color:#c5c5c5}
+
+.RadGrid_Mcs .rgEditRow
+{
+	background:#fff 0 -4900px repeat-x url('sprite.gif');
+}
+*+html .RadGrid_Mcs .rgEditRow .rgSorted{background-color:#fff}
+* html .RadGrid_Mcs .rgEditRow .rgSorted{background-color:#fff}
+
+
+
+
+/*hover*/
+.RadGrid_Mcs .rgActiveRow td,
+.RadGrid_Mcs .rgActiveRow td.rgSorted,
+.RadGrid_Mcs .rgHoveredRow td,
+.RadGrid_Mcs .rgHoveredRow td.rgSorted
+{
+	 background:#c5c5c5 0 -3900px repeat-x url('sprite.gif');
+	/*border-bottom-color:#9e9e9e;*/
+}
+
+/*selected*/
+.RadGrid_Mcs .rgSelectedRow td,
+.RadGrid_Mcs .rgSelectedRow td.rgSorted
+{
+	background:#c5c5c5 0 -3900px repeat-x url('sprite.gif');
+	/*border-bottom-color:#6c6c6c;*/
+	color:#DFE6EC 
+}
+
+/*footer*/
+
+.RadGrid_Mcs .rgFooterDiv,
+.RadGrid_Mcs .rgFooter
+{
+	background:#eee;
+}
+
+.RadGrid_Mcs .rgFooter td
+{
+	border-top:1px solid #828282;
+	border-bottom:1px solid #fff;
+}
+
+/*status*/
+
+.RadGrid_Mcs .rgPager .rgStatus
+{
+	width:35px;
+	border:1px solid;
+	border-color:#828282 #c9c9c9 #eee #c9c9c9;
+	border-left:0;
+	padding:3px 0 2px;
+}
+
+.RadGrid_Mcs .rgStatus div
+{
+	width:24px;
+	height:24px;
+	overflow:hidden;
+	border:0;
+	margin:0 auto;
+	padding:0;
+	background:transparent center center no-repeat url('Common/loading_small.gif');
+	text-indent:-2222px;
+	
+}
+
+/*pager*/
+
+.RadGrid_Mcs .rgPager
+{
+	background:#eee;
+	color:#DFE6EC;
+	
+}
+
+
+
+
+.RadGrid_Mcs .rgPager td
+{
+	padding:0;
+}
+
+.RadGrid_Mcs .rgPager .rgPagerCell
+{
+	border:1px solid;
+	border-color:#828282 #eee #eee;
+	border-right:0;
+	padding:5px 0 4px;
+	
+	background:#6990af  0 -2400px repeat-x url('sprite.gif');
+}
+
+
+/*
+.RadGrid_Mcs .rgHeader,
+.RadGrid_Mcs th.rgResizeCol
+{
+	border:0;
+	border-bottom:1px solid #828282;
+	padding-top:5px;
+	padding-bottom:4px;
+	background:#6990af  0 -2400px repeat-x url('sprite.gif');
+	text-align:left;
+	font-weight:normal;
+}
+
+*/
+
+
+
+
+.RadGrid_Mcs .rgWrap
+{
+	float:left;
+	padding:0 10px;
+	line-height:22px;
+	white-space:nowrap;
+	
+}
+
+.RadGrid_Mcs .rgArrPart1
+{
+	padding-right:0;
+	
+}
+
+.RadGrid_Mcs .rgArrPart2
+{
+	padding-left:0;
+}
+
+.RadGrid_Mcs .rgInfoPart
+{
+	float:right;
+	color:#DFE6EC;
+}
+
+.RadGrid_Mcs .rgInfoPart strong
+{
+	font-weight:normal;
+	color:#4c4e54;
+}
+
+.RadGrid_Mcs .rgArrPart1 img,
+.RadGrid_Mcs .rgArrPart2 img
+{
+	margin:0 8px;
+}
+
+.RadGrid_Mcs .rgPageFirst,
+.RadGrid_Mcs .rgPagePrev,
+.RadGrid_Mcs .rgPageNext,
+.RadGrid_Mcs .rgPageLast
+{
+	width:22px;
+	height:22px;
+	vertical-align:top;
+	border:1px;
+	border-color:#B9CBDA;
+	
+
+/**/
+}
+
+.RadGrid_Mcs .NextPrev .rgPageFirst,
+.RadGrid_Mcs .NextPrev .rgPagePrev,
+.RadGrid_Mcs .NextPrev .rgPageNext,
+.RadGrid_Mcs .NextPrev .rgPageLast
+{
+	vertical-align:middle;
+
+}
+
+.RadGrid_Mcs .rgPageFirst
+{
+	background-position:0 -550px;
+	 
+}
+.RadGrid_Mcs .rgPageFirst:hover
+{
+	background-position:0 -600px;
+}
+.RadGrid_Mcs .rgPagePrev
+{
+	background-position:0 -700px;
+}
+.RadGrid_Mcs .rgPagePrev:hover
+{
+	background-position:0 -750px;
+}
+.RadGrid_Mcs .rgPageNext
+{
+	background-position:0 -850px;
+}
+.RadGrid_Mcs .rgPageNext:hover
+{
+	background-position:0 -900px;
+}
+.RadGrid_Mcs .rgPageLast
+{
+	background-position:0 -1000px;
+}
+.RadGrid_Mcs .rgPageLast:hover
+{
+	background-position:0 -1050px;
+}
+
+.RadGrid_Mcs .rgPagerButton
+{
+	height:22px;
+	border:1px solid;
+	border-color:#d0d0d0 #aeaeae #8b8b8b;
+	margin:0 14px 0 0;
+	padding:0 4px 2px;
+	background:#e8e8e8 repeat-x 0 -1550px url('sprite.gif');
+	color:#000;
+	font:12px/12px "segoe ui",arial,sans-serif;
+	vertical-align:middle;
+	cursor:pointer;
+	
+}
+
+.RadGrid_Mcs .rgNumPart
+{
+	padding:0;
+}
+
+.RadGrid_Mcs .NumericPages .rgNumPart
+{
+	padding:0 10px;
+}
+
+.RadGrid_Mcs .rgNumPart a:hover,
+.RadGrid_Mcs .rgNumPart a:hover span,
+.RadGrid_Mcs .rgNumPart a.rgCurrentPage,
+.RadGrid_Mcs .rgNumPart a.rgCurrentPage span
+{
+	background:no-repeat url('sprite.gif');
+}
+
+.RadGrid_Mcs .rgNumPart a
+{
+	float:left;
+	line-height:22px;
+	margin:0;
+	padding:0 5px 0 0;
+	/*color:#000;*/
+	text-decoration:none;
+	color:#DFE6EC !important;
+}
+
+.RadGrid_Mcs .rgNumPart span
+{
+	float:left;
+	padding:0 0 0 5px;
+}
+
+.RadGrid_Mcs .rgNumPart a:hover
+{
+	background-position:100% -1250px;
+}
+
+.RadGrid_Mcs .rgNumPart a:hover span
+{
+	background-position:0 -1150px;
+	cursor:pointer;
+}
+
+.RadGrid_Mcs .rgNumPart a.rgCurrentPage,
+.RadGrid_Mcs .rgNumPart a.rgCurrentPage:hover
+{
+	background-position:100% -1450px;
+	cursor:default;
+}
+
+.RadGrid_Mcs .rgNumPart a.rgCurrentPage span,
+.RadGrid_Mcs .rgNumPart a.rgCurrentPage:hover span
+{
+	background-position:0 -1350px;
+	cursor:default;
+}
+
+.RadGrid_Mcs .NextPrevNumericAndAdvanced .rgAdvPart
+{
+	float:none;
+	text-align:center;
+	
+}
+
+.RadGrid_Mcs .rgPager .RadSlider
+{
+	float:left;
+	margin:0 10px 0 0;
+}
+
+.RadGrid_Mcs .rgPagerLabel,
+.RadGrid_Mcs .rgPager .RadComboBox,
+.RadGrid_Mcs .rgPager .RadInput_Mcs
+{
+	margin:0 4px 0 0;
+	vertical-align:middle;
+}
+
+*+html .RadGrid_Mcs .rgPager .RadComboBox{margin-top:-1px;}
+* html .RadGrid_Mcs .rgPager .RadComboBox{margin-top:-1px;padding:1px 0;}
+
+.RadGrid_Mcs .rgPagerTextBox
+{
+	text-align:center;
+}
+
+/*sorting, reordering*/
+
+.RadGrid_Mcs .rgHeader .rgSortAsc
+{
+	background-position:3px -248px;
+	height:10px;
+}
+
+.RadGrid_Mcs .rgHeader .rgSortDesc
+{
+	background-position:3px -198px;
+	height:10px;
+}
+
+.GridReorderTop_Mcs,
+.GridReorderBottom_Mcs
+{
+	width:9px !important;
+	height:9px !important;
+	margin-left:-5px;
+	background:0 0 no-repeat url('sprite.gif');
+}
+
+.GridReorderBottom_Mcs
+{
+	background-position:0 -50px;
+}
+
+/*filtering*/
+
+.RadGrid_Mcs .rgFilterRow
+{
+	background:#eee;
+}
+
+.RadGrid_Mcs .rgFilterRow td
+{
+    border-bottom:1px solid #828282;
+    padding-top:4px;
+    padding-bottom:7px;
+}
+
+.RadGrid_Mcs .rgFilter
+{
+	width:22px;
+	height:22px;
+	margin:0 0 0 2px;
+	background-position:0 -300px;
+}
+
+.RadGrid_Mcs .rgFilter:hover
+{
+	background-position:0 -350px;
+}
+
+.RadGrid_Mcs .rgFilterActive,
+.RadGrid_Mcs .rgFilterActive:hover
+{
+	background-position:0 -400px;
+}
+
+.RadGrid_Mcs .rgFilterBox
+{
+	border:1px solid;
+	border-color:#8e8e8e #c9c9c9 #c9c9c9 #8e8e8e;
+	padding:2px 1px 3px;
+	font:12px "segoe ui",arial,sans-serif;
+	color:#333;
+	vertical-align:middle;
+}
+
+/*grouping*/
+
+.RadGrid_Mcs .rgGroupPanel
+{
+	height:24px;
+	border:0;
+	border-bottom:1px solid #828282;
+	background:#eee 0 -1900px repeat-x url('sprite.gif');
+}
+
+.RadGrid_Mcs .rgGroupPanel td
+{
+	border:0;
+	padding:3px 4px;
+}
+
+.RadGrid_Mcs .rgGroupPanel td td
+{
+	padding:0;
+}
+
+.RadGrid_Mcs .rgGroupPanel .rgSortAsc
+{
+	background-position:4px -144px;
+}
+
+.RadGrid_Mcs .rgGroupPanel .rgSortDesc
+{
+	background-position:4px -94px;
+}
+
+.RadGrid_Mcs .rgUngroup
+{
+	background-position:0 -6998px;
+}
+
+.RadGrid_Mcs .rgGroupItem
+{
+	border:1px solid;
+	border-color:#c4c4c4 #c4c4c4 #9e9e9e;
+	padding:0 2px 1px 3px;
+	background:#c6c6c6 0 -6500px repeat-x url('sprite.gif');
+	line-height:20px;
+	font-weight:normal;
+	vertical-align:middle;
+}
+
+.RadGrid_Mcs .rgMasterTable td.rgGroupCol,
+.RadGrid_Mcs .rgMasterTable td.rgExpandCol
+{
+	border-color:#d9d9d9;
+	background:#d9d9d9 none;
+}
+
+.RadGrid_Mcs .rgGroupHeader
+{
+    background:#d9d9d9;
+    font-size:1.1em;
+    line-height:21px;
+	/*color:#000;*/
+
+}
+
+.RadGrid_Mcs .rgGroupHeader td
+{
+	border-top:1px solid #828282;
+	border-bottom:1px solid #d9d9d9;
+	padding-top:0;
+	padding-bottom:0;
+}
+
+.RadGrid_Mcs .rgGroupHeader td.rgGroupCol
+{
+	border-top-color:#828282;
+}
+
+.RadGrid_Mcs .rgExpand
+{
+	background-position:5px -496px;
+}
+
+.RadGrid_Mcs .rgCollapse
+{
+	background-position:3px -444px;
+}
+
+.RadGrid_Mcs .rgGroupHeader td p
+{
+    display:inline;
+    margin:0;
+    padding:0 10px;
+}
+
+.RadGrid_Mcs .rgGroupHeader td div div
+{
+	top:-0.8em;
+	padding:0 10px;
+}
+
+.RadGrid_Mcs .rgGroupHeader td div div div
+{
+	top:0;
+	padding:0;
+	border:0;
+}
+
+/*editing*/
+
+.RadGrid_Mcs .rgEditForm
+{
+	border-bottom:1px solid #828282;
+}
+
+.RadGrid_Mcs .rgUpdate
+{
+	background-position:0 -1800px;
+}
+
+.RadGrid_Mcs .rgCancel
+{
+	background-position:2px -1848px;
+}
+
+/*hierarchy*/
+
+.RadGrid_Mcs .rgDetailTable
+{
+	border:1px solid #828282;
+	border-right:0;
+}
+
+/*command row*/
+
+.RadGrid_Mcs .rgCommandRow
+{
+	background:#c5c5c5 0 -2099px repeat-x url('sprite.gif');
+	color:#000;
+	color:White;
+}
+
+.RadGrid_Mcs .rgCommandCell
+{
+	/*border:1px solid;
+	border-color:#999 #f2f2f2;
+	border-top:0;
+	padding:0;*/
+}
+
+.RadGrid_Mcs tfoot .rgCommandCell
+{
+	/*border-top:1px solid;*/
+	border-bottom:0;
+}
+
+.RadGrid_Mcs .rgCommandTable td
+{
+	border:0;
+	padding:3px 7px 4px;
+}
+
+.RadGrid_Mcs .rgCommandTable
+{
+	border:0;
+	/*border-top:1px solid #fdfdfd;
+	border-bottom:1px solid #e7e7e7;*/
+}
+
+.RadGrid_Mcs .rgCommandRow a
+{
+	color:#000;
+	text-decoration:none;
+	color:White;
+}
+
+.RadGrid_Mcs .rgAdd
+{
+	margin-right:3px;
+	background-position:0 -1650px;
+}
+
+.RadGrid_Mcs .rgRefresh
+{
+	margin-right:3px;
+	background-position:0 -1600px;
+}
+
+.RadGrid_Mcs .rgEdit
+{
+	background-position:0 -1700px;
+}
+
+.RadGrid_Mcs .rgDel
+{
+	background-position:0 -1750px;
+}
+
+/*multirow select*/
+
+.GridRowSelector_Mcs
+{
+	background:#4c4e54;
+}
+
+/*row drag n drop*/
+
+.GridItemDropIndicator_Mcs
+{
+    border-top:1px dashed #666;
+}
+
+/*tooltip*/
+
+.GridToolTip_Mcs
+{
+	border:1px solid #828282;
+	padding:3px;
+	background:#fff;
+	color:#333;
+}
+
+/*rtl*/
+
+.RadGridRTL_Mcs .rgHeader,
+.RadGridRTL_Mcs .rgResizeCol
+{
+	text-align:right;
+	
+}
+
+.RadGridRTL_Mcs .rgPager .rgStatus
+{
+	border-right:0;
+	border-left-width:1px;
+}
+
+.RadGridRTL_Mcs .rgWrap
+{
+	float:right;
+}
+
+.RadGridRTL_Mcs .rgInfoPart
+{
+	float:left;
+}
+
+.RadGridRTL_Mcs .rgNumPart
+{
+	width:220px;
+}
+
+.RadGridRTL_Mcs .rgNumPart a
+{
+	float:right;
+}
+
+.RadGridRTL_Mcs .rgPageFirst
+{
+	background-position:0 -1000px;
+}
+.RadGridRTL_Mcs .rgPageFirst:hover
+{
+	background-position:0 -1050px;
+}
+.RadGridRTL_Mcs .rgPagePrev
+{
+	background-position:0 -850px;
+}
+.RadGridRTL_Mcs .rgPagePrev:hover
+{
+	background-position:0 -900px;
+}
+.RadGridRTL_Mcs .rgPageNext
+{
+	background-position:0 -700px;
+}
+.RadGridRTL_Mcs .rgPageNext:hover
+{
+	background-position:0 -750px;
+}
+.RadGridRTL_Mcs .rgPageLast
+{
+	background-position:0 -550px;
+}
+.RadGridRTL_Mcs .rgPageLast:hover
+{
+	background-position:0 -600px;
+}
+
+.RadGridRTL_Mcs .rgDetailTable
+{
+	border-right:1px solid;
+	border-left:0;
+}
